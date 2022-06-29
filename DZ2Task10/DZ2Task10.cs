@@ -17,14 +17,14 @@ namespace DZ
             {
                 Console.WriteLine("Число не должно быть отрицательным");
             }
-            if (str.Length == 3)
+            else if (str.Length == 3) // Программа работает, но почему здесь Length подсвечивается белым?
             {
                 char secondDigit = str[1];
                 Console.WriteLine($"Вторая цифра в вашем числе: {secondDigit}");
             }
             else
             {
-                Console.WriteLine("Вы неверно ввели число. Нужно ввести трёхзначное число");
+                Console.WriteLine("Вы неверно ввели число. Пожалуйста, начните сначала");
             }
         }
     }
